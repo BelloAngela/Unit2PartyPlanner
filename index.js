@@ -10,7 +10,7 @@ const baseUrl = "https://fsa-crud-2aa9294fe819.herokuapp.com/api/2401-ftb-et-web
   }
 //get party using fetch
   async function getParty() {
-    const response = await fetch('${baseUrl}/events');
+    const response = await fetch("${baseUrl}/events");
     const json = await response.json();
   }
     if (!json.success) {
